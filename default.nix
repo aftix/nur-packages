@@ -18,5 +18,6 @@
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 
-  nordvpn = callPackage ./pkgs/nordvpn { };
+  nordvpn = pkgs.callPackage ./pkgs/nordvpn { };
+  whitesur-kde = pkgs.callPackage ./pkgs/whitesur-kde-theme/default.nix { };
 }
