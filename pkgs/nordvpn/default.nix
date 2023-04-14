@@ -4,6 +4,12 @@
 let
   pname = "nordvpn";
   version = "3.15.5";
+  LuisChDev = {
+    name = "Luis Chavarriaga";
+    email = "luischa123@gmail.com";
+    github = "LuisChDev";
+    githubId = 24978009;
+  };
 
   nordVPNBase = stdenv.mkDerivation {
     inherit pname version;

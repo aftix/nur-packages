@@ -3,7 +3,15 @@
 , fetchFromGitHub
 }:
 
-stdenv.mkDerivation rec {
+let
+  LuisChDev = {
+    name = "Luis Chavarriaga";
+    email = "luischa123@gmail.com";
+    github = "LuisChDev";
+    githubId = 24978009;
+  };
+
+in stdenv.mkDerivation rec {
   pname = "whitesur-kde";
   version = "latest";
 
@@ -48,6 +56,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/vinceliuice/WhiteSur-kde";
     license = licenses.mit;
     platforms = platforms.unix;
-    maintainers = [];
+    maintainers = [ LuisChDev ];
   };
 }
